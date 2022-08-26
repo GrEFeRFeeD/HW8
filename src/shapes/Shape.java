@@ -2,5 +2,12 @@ package shapes;
 
 public abstract class Shape {
 
-    public abstract String getShapeName();
+    private final String SHAPE_NAME;
+
+    public Shape(String shapeName) {
+        this.SHAPE_NAME = shapeName;
+    }
+    public String getShapeName() {
+        return SHAPE_NAME;
+    }
 }
